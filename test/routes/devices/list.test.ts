@@ -1,9 +1,13 @@
-import {test} from "tap"
+import {afterEach, test} from "tap"
 import createApp from "@src/app";
 import {ImportMock} from "ts-mock-imports";
 import * as DeviceLib from '@lib/devices.lib'
 import * as Fixtures from '@test/fixtures'
 import {DeviceDtoCollectionType} from "@type/devices.types";
+
+afterEach(() => {
+  ImportMock.restore();
+})
 
 test('get all devices', async t => {
   const app = createApp({
@@ -49,6 +53,4 @@ test('get all devices', async t => {
   t.equal(deviceCollection[1].isActive, false)
 
   t.ok(listDevicesMock.calledOnce)
-
-  ImportMock.restore();
 })
