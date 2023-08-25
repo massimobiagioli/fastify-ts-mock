@@ -3,7 +3,7 @@ import createApp from "@src/app";
 import {ImportMock} from "ts-mock-imports";
 import * as DeviceLib from '@lib/devices.lib'
 import * as Fixtures from '@test/fixtures'
-import {DeviceDtoCollectionType} from "@type/devices.types";
+import {DeviceDtoCollectionType} from "@type/devices.type";
 
 afterEach(() => {
   ImportMock.restore();

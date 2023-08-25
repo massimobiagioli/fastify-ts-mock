@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyPluginOptions } from 'fastify'
-import {HealthResponseType} from "@type/health.types";
+import {HealthResponseType} from "@type/health.type";
 
 export default async function (
   fastify: FastifyInstance,

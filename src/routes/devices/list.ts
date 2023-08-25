@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyPluginOptions } from 'fastify'
-import {DeviceDtoCollectionType} from "@type/devices.types";
+import {DeviceDtoCollectionType} from "@type/devices.type";
 
 export default async function (
   fastify: FastifyInstance,
