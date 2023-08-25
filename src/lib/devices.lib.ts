@@ -1,4 +1,4 @@
-import {DeviceDtoCollectionType} from "../types/devices.types";
+import {DeviceDtoCollectionType} from "@type/devices.types";
 
 export async function listDevices(): Promise<DeviceDtoCollectionType> {
     return [

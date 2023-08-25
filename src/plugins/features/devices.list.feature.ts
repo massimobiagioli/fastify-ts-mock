@@ -1,7 +1,7 @@
 import fp from 'fastify-plugin'
 import { FastifyInstance, FastifyPluginOptions } from 'fastify'
-import * as DeviceLib from '../../lib/devices.lib'
-import {DeviceDtoCollectionType} from "../../types/devices.types";
+import * as DeviceLib from '@lib/devices.lib'
+import {DeviceDtoCollectionType} from "@type/devices.types";
 
 declare module 'fastify' {
   interface FastifyInstance {
